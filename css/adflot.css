@@ -1,0 +1,129 @@
+body {
+	background: #f2f2f2;
+	font-size: 16px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/* --- --- BARRA LATERAL --- --- */
+.barra-lateral {
+	background: #1D232A;
+	color: #fff;
+	min-width: 300px;
+	min-height: 100vh;  /*Indica que abarca el 100% de ALTO del navegador*/
+	padding: 0;
+}
+
+.barra-lateral a {
+	color: #fff;
+}
+
+/* --- LOGO --- */
+.barra-lateral .logo {
+	background: #00727C;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+.barra-lateral .logo h2 {
+    font-size: 1.875rem;
+    color: #fff;
+    font-weight: 300;
+	padding-top: 5px;
+	text-align: center;	
+    margin:0;    
+}
+
+.barra-lateral .logo .figure{
+    margin-bottom: 0px;
+}
+
+/* --- MENU --- */
+.barra-lateral .menu a {
+	display: block;
+    /*padding: 20px;*/
+    padding: 6px 8px 6px 16px;	
+	font-weight: 500;
+	border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.barra-lateral .menu a:hover, .dropdown-btn:hover {
+	background:  #00727C;
+	text-decoration: none;
+}
+
+.barra-lateral .menu a i, .barra-lateral .menu .dropdown-btn i  {
+	margin-right: 20px;
+	font-weight: normal;
+}
+
+/* Style the sidenav links and the dropdown button */
+.dropdown-btn {    
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;    
+    color: #ffffff;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+
+  /* Add an active class to the active dropdown button */
+.active {
+    background-color: 00727C;
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #1D232A;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+
+
+
+  
+/* --- --- MEDIAQUERIES --- --- */
+@media screen and (max-width: 1300px) {
+	.barra-lateral {
+		min-width: auto;
+	}
+
+	.barra-lateral .logo {
+		display: none;
+	}
+
+  .barra-lateral .menu a span, .barra-lateral .menu button span {
+		display: none;
+	}
+
+  .barra-lateral .menu a i, .barra-lateral .menu .dropdown-btn i  {
+    margin:0;
+  }
+   .barra-lateral .menu button  i {
+    margin:2px;
+   }
+
+}
+
+@media screen and (max-width: 575px) {
+	.barra-lateral {
+		min-height: auto;
+	}
+
+	.barra-lateral .menu a {
+		display: inline-block;
+		border-bottom: none;
+	}
+
+}

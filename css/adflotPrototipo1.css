@@ -1,0 +1,53 @@
+body {
+	background: #f2f2f2;
+	font-size: 16px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* --- --- BARRA LATERAL --- --- */
+.barra-lateral {
+	background: #1D232A;
+	color: #fff;
+	min-width: 300px;
+	min-height: 100vh;  /*Indica que abarca el 100% de ALTO del navegador*/
+	padding: 0;
+}
+
+.barra-lateral a {
+	color: #fff;
+}
+
+/* --- LOGO --- */
+.barra-lateral .logo {
+	background: #00727C;
+	margin-bottom: 2px;
+}
+
+.barra-lateral .logo h2 {
+	font-size: 30px;
+	font-family: 'Ubuntu', sans-serif;
+	padding: 20px 0;
+	text-align: center;
+	font-weight: 300;
+	margin:0;
+}
+
+/* --- MENU --- */
+.barra-lateral .menu a {
+	display: block;
+	padding: 20px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+	border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.barra-lateral .menu a:hover {
+	background:  #00727C;
+	text-decoration: none;
+}
+
+.barra-lateral .menu a i {
+	margin-right: 20px;
+	font-weight: normal;
+}
